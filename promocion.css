@@ -1,0 +1,23 @@
+body{
+    background-image: radial-gradient(circle at center center, rgba(241,195,19, 0.93),rgba(244,150,32, 0.99),rgba(246,105,45, 0.86),rgba(249,59,57, 0.48),rgb(251, 14, 70));
+    height: 900px;
+  
+    
+}
+
+.none {
+    margin-top: 100px;
+    margin-left: 150px;
+   
+}
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    
+}
