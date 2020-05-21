@@ -1,4 +1,18 @@
 
+
+
+
+
+/* quienes somos-rostros */
+.colombia, .venezuela, .mexico{
+  display: flex;
+  margin-left: -100px;
+  margin-top: -300px;
+  font-family: 'Piedra', cursive;
+  font-size: 60px;
+}
+
+
 /* barra y carrusel */
 .logo-barra{
 height: 100px;
@@ -8,10 +22,23 @@ width: 100px;
 .rostro{
   width: 1400px;
   height: 700px;
-}
+  
+  }
+
+  .perfiles{
+    font-family: 'Katibeh', cursive;
+    font-size: 130px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carrusel{
+    display: flex;
+    justify-content: center;
+  }
 .bandera{
   width: 1400px;
- 
+  
 }
 .boton{
   color: red;
@@ -227,13 +254,22 @@ h1 span {
 }
 
 /* cards */
-.cards, .cards2 {
+.cards {
   border: 1px black solid;
   display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
-  height: 270px;
+  height: 500px;
+ margin-top: 40px;
+}
+.cards2{
+  border: 1px black solid;
+  display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  height: 630px;
  
 }
 
