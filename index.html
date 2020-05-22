@@ -18,10 +18,11 @@
   </head>
   <body>
          <!-- BARRA DE NAVEGACION -->
-         <nav class="navbar navbar-expand-lg navbar-black bg-black botones">
-          <button type="button" class="btn btn-danger boton_rojo">NECESITO AYUDA</button>
-          <button type="button" class="btn btn-warning boton_amarillo">QUIERO PROMOCIONAR</button>
-          <button type="button" class="btn btn-light boton_blanco">QUIERO DONAR</button>
+        <nav class="navbar navbar-expand-lg navbar-black bg-black botones">
+           <a href="./Parte_Laura/Ayuda/Ayuda.html"><button type="button" class="btn btn-danger boton_rojo">NECESITO AYUDA</button></a>
+            <a href="./promocion.html"><button type="button" class="btn btn-warning boton_amarillo">QUIERO PROMOCIONAR</button></a>
+            <a href="#"><button type="button" class="btn btn-light boton_blanco">QUIERO DONAR</button></a>  
+          
           <a class="navbar-brand" href="#"> <img class="logo-barra" src="./asset/sos (7).png" alt="Logo SOS LATAM"> </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -98,7 +99,7 @@
                   
                   <div class="portfolio-item__link-block">
                     
-                    <a class="portfolio-item__link" href="./" title="Link Title">
+                    <a class="portfolio-item__link" href="#" title="Link Title">
                       <i class="material-icons">Click</i>
                     
                     </a>
@@ -152,7 +153,7 @@
                   
                   <div class="portfolio-item__link-block">
                     
-                    <a class="portfolio-item__link" href="#" title="Link Title">
+                    <a class="portfolio-item__link" href="./Parte_Laura/Ayuda/Ayuda.html" title="Link Title">
                       <i class="material-icons">Click</i>
                     
                     </a>
@@ -178,6 +179,7 @@
     
     <!-- proyectos -->
     <h1 class="perfiles">PROYECTOS </h1>
+
     <!-- cards -->
       <!-- cards #1 -->
     <section class="cards">
@@ -273,25 +275,25 @@
                   <!-- Grid column -->
                   <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
                       <h6 class="mb-0">Conectate con nosotros en las Redes Sociales!</h6>
-                  </div>
+                    </div>
                   <!-- Grid column -->
                   <!-- Grid column -->
                   <div class="col-md-6 col-lg-7 text-center text-md-right">
                       <!-- Facebook -->
                       <a class="fb-ic">
-                          <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        <img class="redes_sociales" src="https://www.flaticon.com/premium-icon/icons/svg/2392/2392484.svg" width="30px" height="30px" alt="facebbok">
                       </a>
                       <!-- Twitter -->
                       <a class="tw-ic">
-                          <i class="fab fa-twitter white-text mr-4"> </i>
+                        <img class="redes_sociales" src="https://www.flaticon.com/premium-icon/icons/svg/2392/2392499.svg" width="30px" height="30px" alt="twitter">
                       </a>
-                      <!-- Google +-->
+                      <!-- instagram +-->
                       <a class="gplus-ic">
-                          <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        <img class="redes_sociales" src="https://image.flaticon.com/icons/svg/2111/2111463.svg" width="30px" height="30px" alt="instagram">
                       </a>
                       <!--Linkedin -->
                       <a class="li-ic">
-                          <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        <img class="redes_sociales" src="https://www.flaticon.com/premium-icon/icons/svg/2392/2392489.svg" width="30px" height="30px" alt="linkedin">
                       </a>
                       <!--Instagram-->
                       <a class="ins-ic">
@@ -312,9 +314,7 @@
                   <!-- Content -->
                   <h6 class="text-uppercase font-weight-bold">SOS LATAM</h6>
                   <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                  <p>Somos una fundación sin fines de lucro que busca conectar a los mas necesitados con oportunidades
-                      al mismo tiempo apoyando el comercio local y creando proyectos para todos aquellos que desean
-                      ser voluntarios o donar de alguna forma.</p>
+                  <p class="somos_fundacion">Somos una fundación sin fines de lucro que busca conectar a los mas necesitados con oportunidades. <br>Al mismo tiempo apoyando el comercio local y creando proyectos para todos aquellos que desean ser voluntarios o donar de alguna forma.</br></p>
               </div>
               <!-- Grid column -->
               <!-- Grid column -->
@@ -326,10 +326,10 @@
                       <a class="dark-grey-text" href="#!">Quiero Donar</a>
                   </p>
                   <p>
-                      <a class="dark-grey-text" href="#!">Quiero Promocionar</a>
+                      <a class="dark-grey-text" href="./promocion.html">Quiero Promocionar</a>
                   </p>
                   <p>
-                      <a class="dark-grey-text" href="#!">Necesito Ayuda</a>
+                      <a class="dark-grey-text" href="./Parte_Laura/Ayuda/Ayuda.html">Necesito Ayuda</a>
                   </p>
                   <p>
                       <a class="dark-grey-text" href="#!">Quiero donar en Especie</a>
@@ -359,13 +359,16 @@
               <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                   <!-- Links -->
-                  <h6 class="text-uppercase font-weight-bold">Contactanos</h6>
-                  <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-                  <p>
-                      <i class="fas fa-home mr-3"></i> Calle 32 # 83-14 Medellín,CO </p>
-                  <p>
+                  <h6 class="text-uppercase font-weight-bold contacto">Contactanos</h6>
+                  <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto contacto" style="width: 60px;">
+                  <p class="contacto">
+                    <img src="https://image.flaticon.com/icons/svg/25/25694.svg" width="20px" height="20px" alt="direccion">
+                    <i class="fas fa-home mr-3"></i> Calle 32 # 83-14 Medellín,CO </p>
+                  <p class="contacto">
+                    <img src="https://image.flaticon.com/icons/svg/561/561188.svg" width="20px" height="20px" alt="correo">
                       <i class="fas fa-envelope mr-3"></i> info@soslatam.ong</p>
-                  <p>
+                  <p class="contacto">
+                    <img src="https://image.flaticon.com/icons/svg/483/483947.svg" width="20px" height="20px" alt="telf">
                       <i class="fas fa-phone mr-3"></i> + 57 319 308 4712</p>
               </div>
               <!-- Grid column -->
@@ -373,7 +376,7 @@
           <!-- Grid row -->
       </div>
       <!-- Footer Links -->
-      <img src="./Assets/" alt="">
+      <img src="#" alt="">
       <!-- Copyright -->
       <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright: SOS LATAM
           <a class="dark-grey-text" href="https://mdbootstrap.com/"> </a>

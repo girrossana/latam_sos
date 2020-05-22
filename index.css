@@ -34,18 +34,20 @@ body{
 .boton_rojo,.boton_amarillo, .boton_blanco{
 margin-left: 10px;
 font-family: 'Roboto', sans-serif;
+  color: black;
   
 }
 /* letra perfiles */
 h3{
   font-family: 'Roboto', sans-serif;
 }
+/* tamaño de las imagenes de rostros con baderas */
 .rostro{
   width: 1400px;
   height: 700px;
   
   }
-
+  /* estilo de la seccion perfiles */
   .perfiles{
     font-family: 'Carter One', cursive;
     font-size: 50px;
@@ -53,7 +55,7 @@ h3{
     justify-content: center;
     margin-top: 150px;
   }
-
+/* posicion y direccion del carrusel */
   .carrusel{
     display: flex;
     justify-content: center;
@@ -288,11 +290,6 @@ h1 span {
   height: 630px;
  }
 
-.barra{
-  height: 30px;
-  width: 300px;
-  background-color:white;
-}
 
     /* estilos de las cards */
 .apoyo{
@@ -314,8 +311,22 @@ text-align: justify;
   ;
 }
 
-/* IMAGENES */
+/* IMAGENES de las cards*/
 .card-img-top{
   border-radius: 15px;
 }
+  /* estilos de footer */
+
+.mb-0{
+  color: aliceblue;
+  font-family: 'Roboto', sans-serif;
+}
+
+.somos_fundacion{
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
   
+}
+.dark-grey-text{
+  font-family: 'Roboto', sans-serif;
+}
