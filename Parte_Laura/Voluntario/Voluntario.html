@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./Voluntario.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Quiero ser Voluntario</title>
+</head>
+
+<body>
+    <!-- Barra Principal -->
+
+    <nav class="navbar navbar-expand-lg navbar-black bg-black">
+        <button type="button" class="btn btn-danger boton_rojo">   NECESITO AYUDA     </button>
+        <button type="button" class="btn btn-warning boton_amarillo">QUIERO PROMOCIONAR</button>
+        <button  type="button" class="btn btn-light boton_blanco">QUIERO DONAR</button>
+        <a class="navbar-brand" href="#"> <img class="logo-barra" src="./Assets/sos (7).png" alt="Logo SOS LATAM"> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <!-- Barra Principal -->
+
+    <section class="contenido">
+        <!-- Formulario -->
+        <title>Quiero ser Voluntario</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <style>
+            html,
+            body {
+                min-height: 100%;
+            }
+
+            body,
+            div,
+            form,
+            input,
+            select,
+            textarea,
+            label,
+            p {
+                padding: 0;
+                margin: 0;
+                outline: none;
+                font-family: Roboto, Arial, sans-serif;
+                font-size: 14px;
+                color: #666;
+                line-height: 22px;
+            }
+
+            h1 {
+                position: absolute;
+                margin: 0;
+                font-size: 40px;
+                color: #fff;
+                z-index: 2;
+                line-height: 83px;
+            }
+
+            textarea {
+                width: calc(100% - 12px);
+                padding: 5px;
+            }
+
+            .testbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: inherit;
+                padding: 20px;
+            }
+
+            form {
+                width: 70%;
+                padding: 20px;
+                border-radius: 6px;
+                background: #fff;
+                box-shadow: 0 0 8px #669999;
+            }
+
+            .banner {
+                position: relative;
+                height: 500px;
+                background-image: url("https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .banner::after {
+                content: "";
+                background-color: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+
+            input,
+            select,
+            textarea {
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            input {
+                width: calc(100% - 10px);
+                padding: 5px;
+            }
+
+            input[type="date"] {
+                padding: 4px 5px;
+            }
+
+            textarea {
+                width: calc(100% - 12px);
+                padding: 5px;
+            }
+
+            .item:hover p,
+            .item:hover i,
+            .question:hover p,
+            .question label:hover,
+            input:hover::placeholder {
+                color: #669999;
+            }
+
+            .item input:hover,
+            .item select:hover,
+            .item textarea:hover {
+                border: 1px solid transparent;
+                box-shadow: 0 0 3px 0 #669999;
+                color: #669999;
+            }
+
+            .item {
+                position: relative;
+                margin: 10px 0;
+            }
+
+            .item span {
+                color: red;
+            }
+
+            .week {
+                display: flex;
+                justfiy-content: space-between;
+            }
+
+            .colums {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .colums div {
+                width: 48%;
+            }
+
+            input[type="date"]::-webkit-inner-spin-button {
+                display: none;
+            }
+
+            .item i,
+            input[type="date"]::-webkit-calendar-picker-indicator {
+                position: absolute;
+                font-size: 20px;
+                color: #a3c2c2;
+            }
+
+            .item i {
+                right: 1%;
+                top: 30px;
+                z-index: 1;
+            }
+
+            input[type=radio],
+            input[type=checkbox] {
+                display: none;
+            }
+
+            label.radio {
+                position: relative;
+                display: inline-block;
+                margin: 5px 20px 15px 0;
+                cursor: pointer;
+            }
+
+            .question span {
+                margin-left: 30px;
+            }
+
+            .question-answer label {
+                display: block;
+            }
+
+            label.radio:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 17px;
+                height: 17px;
+                border-radius: 50%;
+                border: 2px solid #ccc;
+            }
+
+            input[type=radio]:checked+label:before,
+            label.radio:hover:before {
+                border: 2px solid #669999;
+            }
+
+            label.radio:after {
+                content: "";
+                position: absolute;
+                top: 6px;
+                left: 5px;
+                width: 8px;
+                height: 4px;
+                border: 3px solid #669999;
+                border-top: none;
+                border-right: none;
+                transform: rotate(-45deg);
+                opacity: 0;
+            }
+
+            input[type=radio]:checked+label:after {
+                opacity: 1;
+            }
+
+            .flax {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .btn-block {
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            button {
+                width: 150px;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                background: #669999;
+                font-size: 16px;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background: #a3c2c2;
+            }
+
+            @media (min-width: 568px) {
+
+                .name-item,
+                .city-item {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                }
+
+                .name-item input,
+                .name-item div {
+                    width: calc(50% - 20px);
+                }
+
+                .name-item div input {
+                    width: 97%;
+                }
+
+                .name-item div label {
+                    display: block;
+                    padding-bottom: 5px;
+                }
+            }
+        </style>
+        </head>
+
+        <body>
+            <div class="testbox">
+                <form action="/">
+                    <div class="banner">
+                        <h1>Quiero ser Voluntario</h1>
+                    </div>
+                    <br />
+                    <p>SOS LATAM esta en busca de voluntarios para servir nuestra comunidad. Completa la siguiente
+                        información para indicar como quieres ayudar. </p>
+                    <br />
+                    <div class="colums">
+                        <div class="item">
+                            <label for="name">Nombre<span>*</span></label>
+                            <input id="name" type="text" name="name" required />
+                        </div>
+                        <div class="item">
+                            <label for="eaddress">Email <span>*</span></label>
+                            <input id="eaddress" type="text" name="eaddress" required />
+                        </div>
+                        <div class="item">
+                            <label for="phone">Telefono<span>*</span></label>
+                            <input id="phone" type="tel" name="phone" required />
+                        </div>
+                        <div class="item">
+                            <label for="street">Dirección<span>*</span></label>
+                            <input id="street" type="text" name="street" required />
+                        </div>
+
+                        <div class="item">
+                            <p>Seleccione su País</p>
+                            <select>
+                                <option selected value="" disabled selected></option>
+                                <option value="b">Colombia</option>
+                                <option value="ch">Venezuela</option>
+                                <option value="v">México</option>
+                            </select>
+                        </div>
+
+                        <div class="item">
+                            <label for="city">Ciudad<span>*</span></label>
+                            <input id="city" type="text" name="city" required />
+                        </div>
+                        <div class="item">
+                            <label for="state">Estado/Departamento<span>*</span></label>
+                            <input id="state" type="text" name="state" required />
+                        </div>
+                        <div class="item">
+                            <label for="zip">Código Zip<span>*</span></label>
+                            <input id="zip" type="text" name="zip" required />
+                        </div>
+                    </div>
+                    <div class="question">
+                        <label>Desea recibir informacioón sobre los proyectos que se realizan mensualmente?</label>
+                        <div class="question-answer">
+                            <div>
+                                <input type="radio" value="none" id="radio_1" name="info" />
+                                <label for="radio_1" class="radio"><span>Si</span></label>
+                            </div>
+                            <div>
+                                <input type="radio" value="none" id="radio_2" name="info" />
+                                <label for="radio_2" class="radio"><span>No</span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>Que tipo de Proyectos le interesan más</p>
+                        <select>
+                            <option selected value="" disabled selected></option>
+                            <option value="b">Proyectos con Niños</option>
+                            <option value="ch">Proyectos con Ancianos</option>
+                            <option value="v">Proyectos con Familias</option>
+                            <option value="n">No tengo Preferencia</option>
+                        </select>
+                    </div>
+                    <div class="week">
+                        <div class="question">
+                            <label>Dias de Disponibilidad </label>
+                            <div class="question-answer">
+                                <div>
+                                    <input type="radio" value="none" id="radio_3" name="day" />
+                                    <label for="radio_3" class="radio"><span>Lunes</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_4" name="day" />
+                                    <label for="radio_4" class="radio"><span>Martes</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_5" name="day" />
+                                    <label for="radio_5" class="radio"><span>Miercoles</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_6" name="day" />
+                                    <label for="radio_6" class="radio"><span>Jueves</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_7" name="day" />
+                                    <label for="radio_7" class="radio"><span>Viernes</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_8" name="day" />
+                                    <label for="radio_8" class="radio"><span>Sábado</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_9" name="day" />
+                                    <label for="radio_9" class="radio"><span>Domingo</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <label> - Seleccione las actividades a las que le gustaria asistir</label>
+                            <div class="question-answer">
+                                <div>
+                                    <input type="radio" value="none" id="radio_10" name="activity" />
+                                    <label for="radio_10" class="radio"><span>Entrega de Mercados a familias de bajos
+                                            recursos</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_11" name="activity" />
+                                    <label for="radio_11" class="radio"><span>Entrega de alimentos preparados a
+                                            habitantes de la calle</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_12" name="activity" />
+                                    <label for="radio_12" class="radio"><span>Entrega de alimentos en Fundaciones y
+                                            Horfanatos</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_13" name="activity" />
+                                    <label for="radio_13" class="radio"><span>Talleres de Educación para
+                                            niños</span></label>
+                                </div>
+                                <div>
+                                    <input type="radio" value="none" id="radio_14" name="activity" />
+                                    <label for="radio_14" class="radio"><span>Entrega de elementos de proteccioón en
+                                            Hospitales (Covid-19)</span></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <label for="visit">Dejanos aqui cualquier comentario o proyecto que tengas en mente</label>
+                        <textarea id="visit" rows="3"></textarea>
+                    </div>
+                    <div class="btn-block">
+                        <button class= "boton" type="submit" href="/">Enviar Formulario</button>
+                    </div>
+            </div>
+
+            </form>
+
+
+            <!-- Formulario -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5">
+
+        <div style="background-color: black;">
+            <div class="container">
+
+                <!-- Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0">Conectate con nosotros en las Redes Sociales!</h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+                        <!-- Facebook -->
+                        <a class="fb-ic">
+                            <i class="fab fa-facebook-f white-text mr-4"> </i>
+                        </a>
+                        <!-- Twitter -->
+                        <a class="tw-ic">
+                            <i class="fab fa-twitter white-text mr-4"> </i>
+                        </a>
+                        <!-- Google +-->
+                        <a class="gplus-ic">
+                            <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                        </a>
+                        <!--Linkedin -->
+                        <a class="li-ic">
+                            <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                        </a>
+                        <!--Instagram-->
+                        <a class="ins-ic">
+                            <i class="fab fa-instagram white-text"> </i>
+                        </a>
+
+                    </div>
+                    <!-- Grid column -->
+
+                </div>
+                <!-- Grid row-->
+
+            </div>
+        </div>
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+
+            <!-- Grid row -->
+            <div class="row mt-3 dark-grey-text">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">SOS LATAM</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Somos una fundación sin fines de lucro que busca conectar a los mas necesitados con oportunidades
+                        al mismo tiempo apoyando el comercio local y creando proyectos para todos aquellos que desean
+                        ser voluntarios o donar de alguna forma.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">PERFILES</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Quiero Donar</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Quiero Promocionar</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Necesito Ayuda</a>
+                    </p>
+
+                    <p>
+                        <a class="dark-grey-text" href="#!">Quiero donar en Especie</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Quiero ser Voluntario</a>
+                    </p>
+
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">PAISES</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <a class="dark-grey-text" href="#!">Colombia</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">Venezuela</a>
+                    </p>
+                    <p>
+                        <a class="dark-grey-text" href="#!">México</a>
+                    </p>
+                    
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <!-- Links -->
+                    <h6 class="text-uppercase font-weight-bold">Contactanos</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>
+                        <i class="fas fa-home mr-3"></i> Calle 32 # 83-14 Medellín,CO </p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i> info@soslatam.ong</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i> + 57 319 308 4712</p>
+
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <img src="./Assets/" alt="">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright: SOS LATAM
+            <a class="dark-grey-text" href="https://mdbootstrap.com/"> </a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

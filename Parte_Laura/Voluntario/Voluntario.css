@@ -1,0 +1,49 @@
+.navbar{
+    background-color: black;
+    
+}
+
+.boton_rojo,.boton_amarillo, .boton_blanco{
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+      
+}
+
+.boton_rojo{
+    margin-left: 70px;
+    height: 40px;
+    width: 180px;
+}
+   
+
+.boton_amarillo{
+    height: 40px;
+    width: 210px;
+}
+
+
+
+.logo-barra{
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+.nav-link{ 
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.contenido{
+    background-image: linear-gradient(45deg, rgba(243, 229, 17, 0.27) 0%, rgba(243, 229, 17, 0.27) 4%,rgba(238, 212, 29, 0.27) 4%, rgba(238, 212, 29, 0.27) 20%,rgba(233, 194, 40, 0.27) 20%, rgba(233, 194, 40, 0.27) 31%,rgba(228, 177, 52, 0.27) 31%, rgba(228, 177, 52, 0.27) 51%,rgba(223, 159, 64, 0.27) 51%, rgba(223, 159, 64, 0.27) 64%,rgba(218, 142, 76, 0.27) 64%, rgba(218, 142, 76, 0.27) 67%,rgba(213, 124, 87, 0.27) 67%, rgba(213, 124, 87, 0.27) 88%,rgba(208, 107, 99, 0.27) 88%, rgba(208, 107, 99, 0.27) 100%),linear-gradient(135deg, rgba(238, 114, 87, 0.27) 0%, rgba(238, 114, 87, 0.27) 4%,rgba(220, 101, 92, 0.27) 4%, rgba(220, 101, 92, 0.27) 6%,rgba(202, 89, 98, 0.27) 6%, rgba(202, 89, 98, 0.27) 40%,rgba(184, 76, 103, 0.27) 40%, rgba(184, 76, 103, 0.27) 66%,rgba(166, 64, 109, 0.27) 66%, rgba(166, 64, 109, 0.27) 87%,rgba(148, 51, 114, 0.27) 87%, rgba(148, 51, 114, 0.27) 100%),linear-gradient(0deg, rgb(133, 68, 44) 0%, rgb(133, 68, 44) 8%,rgb(153, 87, 54) 8%, rgb(153, 87, 54) 27%,rgb(173, 106, 63) 27%, rgb(173, 106, 63) 59%,rgb(192, 125, 73) 59%, rgb(192, 125, 73) 61%,rgb(212, 144, 82) 61%, rgb(212, 144, 82) 82%,rgb(232, 163, 92) 82%, rgb(232, 163, 92) 100%);
+
+    
+  
+}
+
+.boton{
+    background-color: tan;
+}
+

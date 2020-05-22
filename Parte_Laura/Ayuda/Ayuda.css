@@ -1,0 +1,61 @@
+
+.contenido{background-image: linear-gradient(217deg, rgba(233, 233, 233, 0.04) 0%, rgba(233, 233, 233, 0.04) 9%,rgba(203, 203, 203, 0.04) 9%, rgba(203, 203, 203, 0.04) 18%,rgba(213, 213, 213, 0.04) 18%, rgba(213, 213, 213, 0.04) 61%,rgba(4, 4, 4, 0.04) 61%, rgba(4, 4, 4, 0.04) 100%),linear-gradient(213deg, rgba(54, 54, 54, 0.04) 0%, rgba(54, 54, 54, 0.04) 37%,rgba(205, 205, 205, 0.04) 37%, rgba(205, 205, 205, 0.04) 61%,rgba(216, 216, 216, 0.04) 61%, rgba(216, 216, 216, 0.04) 75%,rgba(103, 103, 103, 0.04) 75%, rgba(103, 103, 103, 0.04) 100%),linear-gradient(304deg, rgba(127, 127, 127, 0.04) 0%, rgba(127, 127, 127, 0.04) 5%,rgba(199, 199, 199, 0.04) 5%, rgba(199, 199, 199, 0.04) 36%,rgba(103, 103, 103, 0.04) 36%, rgba(103, 103, 103, 0.04) 86%,rgba(183, 183, 183, 0.04) 86%, rgba(183, 183, 183, 0.04) 100%),linear-gradient(90deg, rgb(158, 51, 1),rgb(235, 10, 62));
+
+
+
+}
+.logo-barra{
+    height: 200px;
+    width: 200px;
+    margin-left: 50px;
+    margin-top: 0;
+}
+
+.form{
+    height: 800px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 700px;
+  
+}
+
+.Ayuda{
+    height: 400px;
+    width: 600px;
+}
+
+.navbar{
+    background-color: black;
+    
+}
+
+.nav-link{ 
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.boton{
+    background-color: tan;
+}
+
+
+
+.boton_rojo,.boton_amarillo, .boton_blanco{
+    margin-left: 10px;
+    font-family: 'Roboto', sans-serif;
+      
+}
+
+.boton_rojo{
+    margin-left: 70px;
+    height: 40px;
+    width: 180px;
+}
+   
+
+
+.boton_amarillo{
+    height: 40px;
+    width: 210px;
+}
